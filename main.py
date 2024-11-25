@@ -36,29 +36,29 @@ def main():
             lista_mezo.insert(tk.END, elem)
 
     # GUI ablak
-    ablak = tk.Tk()
-    ablak.title("Bevásárlólista")
+    root = tk.Tk()
+    root.title("Bevásárlólista")
 
     # Beviteli mező éss gombok
-    tk.Label(ablak, text="Adj hozzá elemet a listához:").pack()
-    beviteli_mezo = tk.Entry(ablak)
+    tk.Label(root, text="Adj hozzá elemet a listához:").pack()
+    beviteli_mezo = tk.Entry(root)
     beviteli_mezo.pack()
 
-    hozzaad_gomb = tk.Button(ablak, text="Hozzáad", command=hozzaad_elem)
+    hozzaad_gomb = tk.Button(root, text="Hozzáad", command=hozzaad_elem)
     hozzaad_gomb.pack()
 
-    torol_gomb = tk.Button(ablak, text="Töröl", command=torol_elem)
+    torol_gomb = tk.Button(root, text="Töröl", command=torol_elem)
     torol_gomb.pack()
 
-    random_gomb = tk.Button(ablak, text="Random elem hozzáad", command=random_hozzaad)
+    random_gomb = tk.Button(root, text="Random elem hozzáad", command=random_hozzaad)
     random_gomb.pack()
 
     # lista megjelenítésé
-    tk.Label(ablak, text="Bevásarlólista:").pack()
-    lista_mezo = tk.Listbox(ablak, width=40, height=10)
+    tk.Label(root, text="Bevásarlólista:").pack()
+    lista_mezo = tk.Listbox(root, width=40, height=10)
     lista_mezo.pack()
 
-    ablak.mainloop()
+    root.mainloop()
 
 if __name__ == "__main__":
     main()
