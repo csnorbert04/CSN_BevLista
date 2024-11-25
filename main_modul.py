@@ -1,8 +1,8 @@
 ##mainmodul
 import random
 
-# lista amiből a random választ
-elemek = ["alma", "banán", "tej", "kenyér", "sajt", "vaj", "paradicsom", "hagyma"]
+# lista amiből a random_elem választ, bővíthetö
+elemek = ["alma", "banán", "tej", "kenyér", "sajt", "vaj", "paradicsom", "hagyma", "kalács"]
 
 # Bevásárlólista kezelése
 class BevasarloLista:

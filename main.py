@@ -1,6 +1,7 @@
 ##main
 import tkinter as tk
 from tkinter import messagebox
+
 from main_modul import BevasarloLista
 
 def main():
@@ -52,13 +53,13 @@ def main():
     random_gomb = tk.Button(ablak, text="Random elem hozzáad", command=random_hozzaad)
     random_gomb.pack()
 
-    # megjelenítés
+    # lista megjelenítésé
     tk.Label(ablak, text="Bevásarlólista:").pack()
     lista_mezo = tk.Listbox(ablak, width=40, height=10)
     lista_mezo.pack()
-
 
     ablak.mainloop()
 
 if __name__ == "__main__":
     main()
+
