@@ -13,7 +13,7 @@ def main():
             frissit_lista()
             beviteli_mezo.delete(0, tk.END)
         else:
-            messagebox.showwarning("Figyelmeztetés", f"'{elem}' már a listában van, vagy üres!")
+            messagebox.showwarning("Figyelmeztetés", f"'{elem}' már a listában van, vagy a mező üres!")
 
     def torol_elem():
         elem = beviteli_mezo.get().strip()
@@ -50,7 +50,7 @@ def main():
     torol_gomb = tk.Button(root, text="Töröl", command=torol_elem)
     torol_gomb.pack()
 
-    random_gomb = tk.Button(root, text="Random elem hozzáad", command=random_hozzaad)
+    random_gomb = tk.Button(root, text="Random elem hozzáadása", command=random_hozzaad)
     random_gomb.pack()
 
     # lista megjelenítésé
